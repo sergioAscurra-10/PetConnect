@@ -15,16 +15,16 @@ namespace PetConnect.Models
 
         [Required]
         [StringLength(150)]
-        public string NombreCompleto { get; set; }
+        public string? NombreCompleto { get; set; }
 
         [Required]
         [StringLength(100)]
         [EmailAddress]
-        public string Email { get; set; }
+        public string? Email { get; set; }
 
         [Required]
-        public string PasswordHash { get; set; }
-        
+        public string? PasswordHash { get; set; }
+
         public DateTime FechaRegistro { get; set; } = DateTime.UtcNow;
         
         public bool Activo { get; set; } = true;

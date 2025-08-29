@@ -12,8 +12,8 @@ namespace PetConnect.Models
         public int UsuarioId { get; set; }
         public int RolId { get; set; }
 
-        // Propiedades de navegación para acceder a los objetos completos
-        public Usuario Usuario { get; set; }
-        public Rol Rol { get; set; }
+        
+        public Usuario? Usuario { get; set; }
+        public Rol? Rol { get; set; }
     }
 }

@@ -15,7 +15,7 @@ namespace PetConnect.Models
 
         [Required]
         [StringLength(50)]
-        public string Nombre { get; set; }
+        public string? Nombre { get; set; }
 
         // Propiedad de navegación para la relación muchos a muchos con Usuarios
         public ICollection<UsuarioRol> UsuarioRoles { get; set; } = new List<UsuarioRol>();
